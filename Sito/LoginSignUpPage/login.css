@@ -80,7 +80,7 @@ header{
 /*login box*/
 
 .center-container {
-    height: 100vh;
+    height: 800px;
     width: 100vw;
     display: flex;
     justify-content: center;

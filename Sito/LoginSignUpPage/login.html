@@ -5,10 +5,13 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
     <title>login</title>
-    <link rel="stylesheet" href="styleLogin.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 
 <body>
+
+    <!-- INIZIO NAVBAR  -->
+
     <header>
         <div class="navbar">
             <div class="logo"><a href="sito.html">Ship Site</a></div>
@@ -21,8 +24,14 @@
             <a href="login.html" class="action_btn">Login</a>
         </div>
     </header>
+
+    <!-- FINE NAVBAR -->
+
+
     <div class="center-container">
         <div class="container">
+
+            <!-- TOGGLE BUTTON LOGIN - SIGNUP -->
 
             <div class="slider"></div>
             <div class="btn">
@@ -32,7 +41,7 @@
 
             <div class="form-section">
 
-                <div class="login-box">
+                <form class="login-box">
                     <input type="email"
                         class="email ele"
                         placeholder="youremail@email.com">
@@ -41,10 +50,10 @@
                         class="password ele"
                         placeholder="password">
                     <button class="clkbtn">Login</button>
-                </div>
+                </form>
 
                 <!-- signup form -->
-                <div class="signup-box">
+                <div method="POST" class="signup-box">
                     <input type="text"
                         class="name ele"
                         placeholder="Enter your name">
@@ -73,7 +82,7 @@
             </div>
         </div>
     </div>
-    <script src="index.js"></script>
+    <script src="login.js"></script>
 
     <footer>
         <div class="footer-content">
