@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,0"/>
+    <link rel="stylesheet" href="style.css" />
+    <title>Shipping Site</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo"><a href="#">Ship Site</a></div>
+        <ul class="links">
+          <li><a href="prenotazione.html">Prenota Spedizione</a></li>
+          <li><a href="monitoraSpedizione">Monitora Spedizione</a></li>
+          <li><a href="#prezzi">Prezzi Servizio</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+        <a href="login.html" class="action_btn">Login</a>
+        <img src="img/user.png" class="user-pic" onclick="toggleMenu()">
+
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <img src="img/user.png">
+              <h3>Nome Cognome</h3>
+            </div>
+            <hr>
+            <a href="#" class="sub-menu-link">
+              <img src="img/profile.png">
+              <p>Profile</p>
+              <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <img src="img/logout.png">
+              <p>Logout</p>
+              <span>></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <script>
+      let subMenu = document.getElementById("subMenu")
+
+      function toggleMenu(){
+        subMenu.classList.toggle("open-menu");
+      }
+
+    </script>
+
+    <div id="spacer"></div>
+
+    <div id="slider">
+      <figure>
+        <img src="img/1.png">
+        <img src="img/2.png">
+        <img src="img/3.png">
+        <img src="img/4.png">
+        <img src="img/1.png">
+      </figure>
+    </div>
+
+    <div id="spacer-slider-card"></div>
+
+    <div class="card-container">
+      <div class="container">
+        <div class="card">
+          <div class="front"></div>
+          <div class="back">
+            <h1>Back of Card</h1>
+            <p>Additional info on the back of the card</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="container">
+        <div class="card">
+          <div class="front"></div>
+          <div class="back">
+            <h1>Back of Card</h1>
+            <p>Additional info on the back of the card</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="container">
+        <div class="card">
+          <div class="front"></div>
+          <div class="back">
+            <h1>Back of Card</h1>
+            <p>Additional info on the back of the card</p>
+          </div>
+        </div>
+      </div>
+    </div>   
+
+    <div id="spacer-slider-card"></div>
+    
+    <div class="headingAbout">
+      <h1 id="about" >About Us</h1>
+      <p>Questa è una prova</p>
+    </div>
+    <section class="about-us">
+      <img src="img/download.jpeg">
+      <div class="contentAbout">
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>Questa è una prova</p>
+      </div>
+    </section>
+    
+    <div id="spacer-slider-card"></div>
+    
+    <div class="headingText">
+      <h1 id="prezzi">Text</h1>
+      <p>Questa è una prova</p>
+    </div>
+    <section class="text">
+      <div class="contentText">
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>Questa è una prova</p>
+      </div>
+      <img src="img/download.jpeg">
+    </section>  
+    
+    <div id="spacer-slider-card"></div>
+
+    <footer>
+      <div class="footer-content">
+        <h3>Maggiori informazioni</h3>
+        <ul class="footer-links">
+          <li><a href="terminiCondizioni">Termini e Condizioni</a></li>
+          <li><span class="link-space"></span></li>
+          <li><a href="contatti">Contatti</a></li>
+        </ul>      
+      </div>
+      <div class="footer-bottom">
+        <p>copyright &copy;2023 Ship Site. designed by <span>Gruppo13</span></p>
+      </div>
+    </footer>
+  </body>
+</html>
