@@ -6,14 +6,22 @@ let isCompanyCheckbox = document.querySelector(".company-checkbox");
 let vatNumberInput = document.querySelector(".vat-number");
 let companyNameInput = document.querySelector(".company-name");
 
+// Seleziona le due box
+let loginBox = document.querySelector(".login-box");
+let signupBox = document.querySelector(".signup-box");
+
 signup.addEventListener("click", () => {
     slider.classList.add("moveslider");
-    formSection.classList.add("form-section-move");
+    // Quando si fa clic su "Signup", nascondi la loginBox e mostra la signupBox
+    loginBox.style.display = "none";
+    signupBox.style.display = "flex";
 });
 
 login.addEventListener("click", () => {
     slider.classList.remove("moveslider");
-    formSection.classList.remove("form-section-move");
+    // Quando si fa clic su "Login", nascondi la signupBox e mostra la loginBox
+    signupBox.style.display = "none";
+    loginBox.style.display = "flex";
 });
 
 isCompanyCheckbox.addEventListener("change", () => {

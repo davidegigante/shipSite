@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profilo utente</title>
+    <link rel="stylesheet" type="text/css" href="styleUser.css">
+</head>
+<body onload="showProfile()">
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Ship Site</a></div>
+            <ul class="links">
+                <li><a href="prenotazione.html">Prenota Spedizione</a></li>
+                <li><a href="monitoraSpedizione">Monitora Spedizione</a></li>
+                <li><a href="#prezzi">Prezzi Servizio</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        <a href="login.html" class="action_btn">Login</a>
+        <img src="img/user.png" class="user-pic" onclick="toggleMenu()">
+
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img src="img/user.png">
+                    <h3>Nome Cognome</h3>
+                </div>
+                <hr>
+                <a href="#" class="sub-menu-link">
+                    <img src="img/profile.png">
+                    <p>Profile</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <img src="img/logout.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="spacer-slider-card"></div>
+    
+    <div class="container">
+        <div class="cardMenu" id="menu">
+            <h2>Seleziona: </h2>
+            <span class="link-space"></span>
+            <button onclick="showProfile()" class="bottone">Profilo</button>
+            <button onclick="showAddress()" class="bottone">Indirizzo</button>
+            <button onclick="logout()" class="bottone">Logout</button>
+        </div>
+        <div id="spacer-slider-card"></div>
+        <div class="cardInfo" id="info">
+            
+            <!-- Qui saranno visualizzate le informazioni dell'utente -->
+        </div>
+    </div>
+</body>
+<script src="user.js"></script>
+</html>

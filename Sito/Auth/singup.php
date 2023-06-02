@@ -8,21 +8,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $password = $_POST["password"];
     $isCorriere = isset($_POST["aziendaCheckbox"]);
-    $indirizzo = $_POST["indirizzo"]
-
-    if ($isCorriere) {
-
-        $nomeAzienda = $_POST["nomeAzienda"];
-        $partitaIVA = $_POST["partitaIVA"];
-
-        $queryAzienda = "INSERT INTO tabella_aziende (nome_azienda, partita_iva) VALUES ('$nomeAzienda', '$partitaIVA')";
-
-        $resultAzienda = pg_query($connection, $queryAzienda);
-
-        if (!$resultAzienda) {
-            echo "Errore nell'inserimento dei dati aziendali.";
-            exit;
-        }
 
     $nome = $_POST["nome"];
     $email = $_POST["email"];

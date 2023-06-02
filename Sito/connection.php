@@ -12,4 +12,5 @@ if (!$conn) {
     echo "Errore nella connessione al database.";
     exit;
 }
+
 ?>
